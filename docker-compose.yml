@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  webhook:
+    container_name: webhook-sample
+    ports:
+      - "5774:5774"
+    build: .
+    volumes:
+      - ./:/src
